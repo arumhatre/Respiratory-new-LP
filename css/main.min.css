@@ -3963,8 +3963,7 @@ footer .footerWrapper .socialLink ul li {
 
 .consultdocSec .consultdocWrapper .consultdocForm form .formCtaBox .callCTA {
 	width: 49%;
-	border: none;
-	border-right: 0px;
+	border: 1px solid #30292b;
 }
 
 .consultdocSec .consultdocWrapper .consultdocForm form .formCtaBox .callCTA a {
@@ -3983,8 +3982,9 @@ footer .footerWrapper .socialLink ul li {
 
 .consultdocSec .consultdocWrapper .consultdocForm form .formCtaBox .formCTA {
 	width: 49%;
-	border: none;
+	border: 1px solid #e49143;
 	margin-left: 2%;
+	background-color: #e49143;
 }
 
 @media all and (max-width:1800px) {
