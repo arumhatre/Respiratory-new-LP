@@ -1560,8 +1560,8 @@ footer .footerWrapper .socialLink ul li {
 
 @media all and (max-width:550px){
    .bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 117vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 	.bannerSec .bannerWrapper .bannerImg {
@@ -1589,8 +1589,8 @@ footer .footerWrapper .socialLink ul li {
 
 @media all and (max-width:480px) {
 	.bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 85vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 	.bannerSec .bannerWrapper .bannerContent img{
@@ -1610,8 +1610,8 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:450px){
 
 	.bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 90vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 }
@@ -1619,8 +1619,8 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:430px){
 
 	.bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 85vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 }
@@ -1629,8 +1629,8 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:400px){
 
 	.bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 90vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 }
@@ -1639,8 +1639,8 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:390px){
 
 	.bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 90vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 }
@@ -1648,8 +1648,8 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:378px) {
     
     .bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 90vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 
 	.bannerSec .bannerWrapper .bannerContent img{
@@ -1667,24 +1667,24 @@ footer .footerWrapper .socialLink ul li {
 
 @media all and (max-width:375px){
    .bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 110vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 }
 
 
 @media all and (max-width:360px){
    .bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 105vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 }
 
 
 @media all and (max-width:300px){
    .bannerSec .bannerWrapper {
-		padding: 160px 40px 0px 30px;
-		height: 90vh;
+		padding: 160px 40px 30px 30px;
+		height: auto;
 	}
 }
 
