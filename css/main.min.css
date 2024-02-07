@@ -441,7 +441,7 @@ header .mainHeader .mainNav nav ul li a.active::before,header .mainHeader .mainN
 }
 
 header .visitCTA {
-	width: 90px;
+	width: 120px;
 	cursor: pointer;
 }
 
