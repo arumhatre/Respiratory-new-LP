@@ -1607,6 +1607,35 @@ footer .footerWrapper .socialLink ul li {
 	}
 }
 
+@media all and (max-width:450px){
+
+	.bannerSec .bannerWrapper {
+		padding: 160px 40px 0px 30px;
+		height: 90vh;
+	}
+
+}
+
+@media all and (max-width:430px){
+
+	.bannerSec .bannerWrapper {
+		padding: 160px 40px 0px 30px;
+		height: 85vh;
+	}
+
+}
+
+
+@media all and (max-width:400px){
+
+	.bannerSec .bannerWrapper {
+		padding: 160px 40px 0px 30px;
+		height: 90vh;
+	}
+
+}
+
+
 @media all and (max-width:390px){
 
 	.bannerSec .bannerWrapper {
@@ -1620,7 +1649,7 @@ footer .footerWrapper .socialLink ul li {
     
     .bannerSec .bannerWrapper {
 		padding: 160px 40px 0px 30px;
-		height: 110vh;
+		height: 90vh;
 	}
 
 	.bannerSec .bannerWrapper .bannerContent img{
@@ -1636,10 +1665,10 @@ footer .footerWrapper .socialLink ul li {
 	}
 }
 
-@media all and (max-width:360px){
+@media all and (max-width:375px){
    .bannerSec .bannerWrapper {
 		padding: 160px 40px 0px 30px;
-		height: 100vh;
+		height: 110vh;
 	}
 }
 
@@ -1647,7 +1676,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:360px){
    .bannerSec .bannerWrapper {
 		padding: 160px 40px 0px 30px;
-		height: 115vh;
+		height: 105vh;
 	}
 }
 
