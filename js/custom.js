@@ -113,21 +113,21 @@ var visitCTA = bodymovin.loadAnimation({
     autoplay: true,
 });
 
-var treatmentOne = bodymovin.loadAnimation({
-    container: document.getElementById("treatmentOne"),
-    path: "js/json/treatmentOne.json", // Required
-    renderer: "svg", // or 'canvas', 'html'
-    loop: true,
-    autoplay: true,
-});
+// var treatmentOne = bodymovin.loadAnimation({
+//     container: document.getElementById("treatmentOne"),
+//     path: "js/json/treatmentOne.json", // Required
+//     renderer: "svg", // or 'canvas', 'html'
+//     loop: true,
+//     autoplay: true,
+// });
 
-var treatmentTwo = bodymovin.loadAnimation({
-    container: document.getElementById("treatmentTwo"),
-    path: "js/json/treatmentTwo.json", // Required
-    renderer: "svg", // or 'canvas', 'html'
-    loop: true,
-    autoplay: true,
-});
+// var treatmentTwo = bodymovin.loadAnimation({
+//     container: document.getElementById("treatmentTwo"),
+//     path: "js/json/treatmentTwo.json", // Required
+//     renderer: "svg", // or 'canvas', 'html'
+//     loop: true,
+//     autoplay: true,
+// });
 
 var treatmentThree = bodymovin.loadAnimation({
     container: document.getElementById("treatmentThree"),
