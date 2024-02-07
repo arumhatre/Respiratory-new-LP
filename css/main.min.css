@@ -6298,14 +6298,22 @@ footer .footerWrapper .socialLink ul li {
 
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -450px;
+    margin-top: -360px;
     margin-left: 400px;
+}
+
+@media all and (max-width:1800px){
+.circle-icon-cls-pp-imp-3 {
+    position: relative;
+    margin-top: -280px;
+    margin-left: 420px;
+}
 }
 
 @media all and (max-width:1700px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -385px;
+    margin-top: -280px;
     margin-left: 385px;
 }
 }
@@ -6313,7 +6321,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:1600px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -260px;
+    margin-top: -190px;
     margin-left: 370px;
 }
 
@@ -6322,7 +6330,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:1400px){
 	.circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -270px;
+    margin-top: -200px;
     margin-left: 330px;
 }
 }
@@ -6331,7 +6339,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:1280px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -205px;
+    margin-top: -140px;
     margin-left: 330px;
     width: 65%;
 }
@@ -6340,7 +6348,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:1200px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -225px;
+    margin-top: -150px;
     margin-left: 305px;
     width: 65%;
 }
@@ -6349,7 +6357,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:1024px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -270px;
+    margin-top: -170px;
     margin-left: 325px;
     width: 65%;
 }
@@ -6358,7 +6366,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:992px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -240px;
+    margin-top: -145px;
     margin-left: 325px;
     width: 55%;
 }
@@ -6377,7 +6385,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:768px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: 110px;
+    margin-top: 180px;
     margin-left: 70px;
     width: 65%;
 }
@@ -6386,7 +6394,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:540px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: 9	5px;
+    margin-top: 95px;
     margin-left: 50px;
     width: 65%;
 }
@@ -6404,7 +6412,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:415px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-left: 50px;
     width: 65%;
 }
@@ -6413,9 +6421,9 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:375px){
 .circle-icon-cls-pp-imp-3 {
    position: relative;
-    margin-top: 15px;
+    margin-top: 60px;
     margin-left: 57px;
-    width: 50%;
+    width: 65%;
 }
 }
 
@@ -6423,7 +6431,7 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:360px){
 .circle-icon-cls-pp-imp-3 {
    position: relative;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-left: 57px;
     width: 52%;
 }
@@ -6432,9 +6440,9 @@ footer .footerWrapper .socialLink ul li {
 @media all and (max-width:280px){
 .circle-icon-cls-pp-imp-3 {
     position: relative;
-    margin-top: -25px;
+    margin-top: 10px;
     margin-left: 50px;
-    width: 45%;
+    width: 33%;
 }
 }
 
