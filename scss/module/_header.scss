@@ -1,0 +1,208 @@
+header{position: fixed;z-index: 9; width: 100%;top: 0;transition: top 0.5s ease-in-out;
+    &.nav-up{top: -220px;}
+    .headerTop{background: #00466A; padding: 15px 20px; text-align: center; transition: 0.5s all ease-in; overflow: hidden;
+        &.hideTop{height: 0; padding: 0;}
+        p{@include font20;font-weight: $fontW400;line-height: normal; color: #fff;
+            a{font-weight: $fontW700;text-decoration-line: underline;color: #fff;}
+        }
+    }
+    .mainHeader{
+        padding: 30px 60px; display: flex; align-items: center;justify-content: space-between;transition: top 0.5s ease-in-out;
+        .logoBox{transition: top 0.5s ease-in-out;}
+        .mainNav{margin: 0px 80px;
+            nav ul {list-style: none;text-align: center; display: flex; align-items: center;
+                li {margin-right: 30px;
+                    &:last-child{margin-right: 0px;}
+                    a {color: #30292B;@include font14;font-weight: $fontW500;line-height: 1;text-decoration: none;transition: all 0.2s ease; position: relative;
+                        &::before{content: '';width: 0;height: 4px;background: #ED1C24; position: absolute; left: 0; right: 0;bottom: -6px;display: block;margin: auto; display: block;transition: 0.5s all ease-in;}
+                        // &.active{border-bottom: 2px solid #ED1C24;}
+                        // &:hover{font-weight: $fontW700;}
+                        &:hover::before, &.active::before{width: 33px;}
+                    }
+                }
+            }
+        }
+    }
+    .visitCTA{width: 120px;cursor: pointer;}
+    .mobileNav{
+        position: fixed; bottom: 0; right: 0; width: 0%; height: 0%; background: rgba(0, 0, 0, 0.30); overflow: hidden; z-index: 9; transition: 0.5s all ease-in;
+        nav{opacity: 0;width: 166px;height: auto;background: #30292B;position: absolute;right: 30px;bottom: 160px;
+            &::after{content: '';display: block; width: 0px; height: 0px; border-left: 12px solid transparent;border-right: 12px solid transparent;border-top: 15px solid #30292B; position: absolute; bottom: -14px; right: 12px; }
+            ul{
+                li{padding: 0px 15px; margin-top: 25px;
+                    &:last-child{margin-bottom: 20px;}
+                    a{color: #FFF;@include font14;font-weight: $fontW400;line-height: 86%;letter-spacing: 0.15px;text-transform: capitalize;}
+                }
+            }
+        }
+        &.activeMobNav{width: 100%; height: 100%;
+            nav{opacity: 1;}
+        }
+        
+    }
+    .mobNavBtn{position: fixed; bottom: 80px; right: 20px; z-index: 9; display: none;
+        .hamburger{width: 47px;height: 47px;background: #30292B;border-radius: 50%; overflow: hidden; cursor: pointer; display: flex; flex-flow: column; align-items: center; justify-content: center;}
+        .hamburger .line{width: 25px;height: 3px;background-color: #ecf0f1;display: block;margin: 3px auto;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+        .hamburger:hover{cursor: pointer;}
+        /* ONE */
+        #hamburger-1.is-active .line:nth-child(2){opacity: 0;}
+        #hamburger-1.is-active .line:nth-child(1){-webkit-transform: translateY(9px) rotate(45deg);-ms-transform: translateY(9px) rotate(45deg);-o-transform: translateY(9px) rotate(45deg);transform: translateY(9px) rotate(45deg);}
+        #hamburger-1.is-active .line:nth-child(3){-webkit-transform: translateY(-9px) rotate(-45deg);-ms-transform: translateY(-9px) rotate(-45deg);-o-transform: translateY(-9px) rotate(-45deg);transform: translateY(-9px) rotate(-45deg);}
+    }
+    &.headerSmall{background: #ffffff;
+        .mainHeader{padding-top: 15px;padding-bottom: 15px;
+            .logoBox{width: 140px;}
+        }
+    }
+    @media all and (max-width:1800px){
+        .headerTop{padding: 12px 15px;}
+        .mainHeader{padding: 25px 50px;
+            .logoBox{
+                img{width: 180px;}
+            }
+            .mainNav{ margin: 0px 45px;}
+        }
+    }
+    @media all and (max-width:1700px){
+        .mainHeader{
+            .logoBox{
+                img{width: 160px;}
+            }
+        }
+    }
+    @media all and (max-width:1600px){
+        .mainHeader{
+            .logoBox{width: 125px;}
+            .mainNav{ margin: 0px 35px;
+                nav{
+                    ul{
+                        li{margin-right: 18px;}
+                    }
+                }
+            }
+        }
+    }
+    @media all and (max-width:1440px){
+        &.headerSmall .mainHeader .logoBox{width: 120px;}
+        .headerTop{padding: 10px 12px;}
+        .mainHeader{padding: 20px 30px;
+            .logoBox{
+                img{width: 110px;}
+            }
+            .mainNav{margin: 0px 20px;
+                nav{
+                    ul{
+                        li{margin-right: 20px;
+                            a{font-size: 13px;}
+                        }
+                    }
+                }
+            }
+        }
+        .visitCTA{width: 80px;}
+    }
+    @media all and (max-width:1280px){
+        .headerTop{padding: 8px 10px;}
+        .mainHeader{padding: 15px 30px;
+            .logoBox{
+                img{width: 100px;}
+            }
+            .mainNav{margin: 0px 20px 0px 30px;
+                nav{
+                    ul{
+                        li{margin-right: 15px;
+                            a{font-size: 12px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media all and (max-width:1024px){
+        display: flex; flex-flow: column-reverse;z-index: 9;
+        .mainHeader{
+            .mainNav{display: none;}
+        }
+        .mobNavBtn{display: block;}
+    }
+}
+
+.bookappointmentSec{background: rgba(0, 0, 0, 0.30);backdrop-filter: blur(2px); position: fixed; top: 0; right: 0; width: 0%; height: 100%; z-index: 99; overflow: hidden; transition: 0.5s all ease-in;
+    &.activepopup{width: 100%;}
+    .bookappointmentBox{background: #FBFBFB;width: 800px;height: 100%;position: absolute;top: 0;right: 0; padding: 80px 260px 0px 50px; overflow-y: scroll;-webkit-appearance: none;scrollbar-width: auto;scrollbar-color: #00466A;
+    &::-webkit-scrollbar {
+        height: 10px;
+        background-color: transparent;
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #00466A;
+        border-radius: 100px;
+    }
+        .bookappointmentContent{
+            h2{color: #30292B;font-family: $fontGilda;@include font64;font-weight: 400;line-height: 109%;letter-spacing: -1.92px; }
+            p{color: #30292B;@include font20;font-weight: 400;line-height: 150%;margin: 40px 0px;}
+            h4{color: #636363;@include font18;font-weight: 400;line-height: 133%; letter-spacing: 0.25px;margin-bottom: 5px;}
+            form{
+                input{border: 2px solid rgb(23, 23, 23, 0.1);background: #FFF; padding: 12px; width: 100%; margin-bottom: 40px;}
+            }
+            ul{overflow-y: auto;height: 400px;
+                li{border: 2px solid #CDCDCD;background: #FFF;padding: 16px;position: relative; transition: 0.5s all ease-in; margin-bottom: 20px; padding-right: 110px;
+                    h3{color: #30292B;@include font20;font-weight: 500;line-height: 120%;letter-spacing: 0.252px; margin-bottom: 10px;}
+                    p{margin: 0px;color: #636363;@include font16;font-weight: 400;line-height: 135%;letter-spacing: 0.252px;}
+                    a{height: 100%; position: absolute;top: 0; right: 0; padding: 10px; display: flex; align-items: center; justify-content: center;flex-flow: column;transition: 0.5s all ease-in;background: rgba(205, 205, 205, 0.40);}
+                    &:hover{border: 2px solid #ED1C24;
+                        a{background: #CAEDFF;}
+                    }
+                }
+            }
+            .datetimePicker{display: flex; flex-flow: wrap; justify-content: space-between; margin-top: 40px;
+                .dateBox, .timeBox{width: calc(50% - 13px);
+                    input{border: 2px solid rgb(23, 23, 23, 0.1);background: #FFF; padding: 12px; width: 100%;}
+                }
+            }
+            .payCta{display: flex; flex-flow: wrap;
+                .payClinic{width: 50%; color: #30292B;@include font16;font-weight: 800;line-height: 100%;letter-spacing: 0.8px;text-transform: uppercase;border-top: 1px solid #30292B;border-left: 1px solid #30292B;background: #FFF; padding: 30px 20px;}
+                .payOnline{width: 50%;color: #FFE2E3;@include font16;font-weight: 700;line-height: 100%; letter-spacing: 0.8px;text-transform: uppercase;background: #ED1C24;border-top: 1px solid #ED1C24;border-right: 1px solid #ED1C24;padding: 30px 20px;}
+            }
+        }
+        .bookappClose{position: absolute;top: 100px;right: 90px; cursor: pointer;}
+    }
+    @media all and (max-width:1800px){
+        .bookappointmentBox{width: 700px;padding: 60px 220px 0px 40px;
+            .bookappointmentContent{
+                p{margin: 30px 0px;}
+                form{
+                    input{margin-bottom: 30px;}
+                }
+                ul{
+                    li{padding: 14px;margin-bottom: 18px;padding-right: 110px;}
+                }
+                .datetimePicker{margin-top: 30px;}
+            }
+            .bookappClose{top: 80px;right: 60px;}
+        }
+    }
+    @media all and (max-width:1600px){
+        .bookappointmentBox{padding: 60px 200px 0px 40px;
+            .bookappClose{top: 60px;right: 40px;}
+        }
+    }
+    @media all and (max-width:1440px){
+        .bookappointmentBox{width: 550px;padding: 50px 90px 0px 35px;
+            .bookappointmentContent ul{height: 420px;}
+        }
+    }
+    @media all and (max-width:768px){
+        .bookappointmentBox{width: 100%;padding: 30px; height: 80vh; top: unset; bottom: 0; padding-bottom: 0px;
+            .bookappointmentContent{
+                ul{height: 300px;}
+                h2{width: 60%;}
+            }
+            .bookappClose{top: 30px; right: 20px;}
+        }
+    }
+}
